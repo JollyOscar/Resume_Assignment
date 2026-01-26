@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Gamble Resume — Targeted (Irving Shipbuilding)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #525659;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* A4 Page */
+        .page {
+            width: 210mm;
+            min-height: 296mm;
+            background: white;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        /* Print */
+        @media print {
+            @page {
+                margin: 0;
+                size: auto;
+            }
+            html, body {
+                height: 100%;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: hidden;
+            }
+            .page {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                min-height: 100%;
+                margin: 0;
+                border: none;
+            }
+            .no-print {
+                display: none !important;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+
+        /* Columns */
+        .left-col {
+            background-color: #333333;
+            color: white;
+            width: 34%;
+            padding: 18px 16px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-col {
+            background-color: white;
+            color: #1a1a1a;
+            width: 66%;
+            padding: 20px;
+        }
+
+        h2 {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            letter-spacing: 0.05em;
+        }
+
+        .left-col h2 {
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 4px;
+            margin-top: 12px;
+            color: #f0f0f0;
+        }
+
+        .right-col h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 4px;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-link {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+            margin-bottom: 4px;
+            line-height: 1.35;
+        }
+
+        li {
+            margin-bottom: 1px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Control Bar -->
+    <div class="fixed top-0 left-0 w-full bg-white p-4 shadow-md no-print flex justify-center items-center gap-4 z-50">
+        <span class="font-bold text-gray-700">Targeted Resume Preview (Irving Shipbuilding)</span>
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow">
+            Download PDF / Print
+        </button>
+    </div>
+
+    <!-- Page -->
+    <div class="page mt-16">
+
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+            <!-- Name -->
+            <div class="mb-3">
+                <h1 class="text-3xl font-bold uppercase tracking-wide leading-tight mb-1">Alex<br>Gamble</h1>
+                <p class="text-gray-300 text-sm">Truro, NS</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="mb-2">
+                <a href="tel:9029568112" class="contact-link">902-956-8112</a>
+                <a href="mailto:thealexgamble@gmail.com" class="contact-link">thealexgamble@gmail.com</a>
+                <a href="https://www.linkedin.com/in/alex-gamble-987805351" target="_blank" class="contact-link text-blue-300">LinkedIn Profile</a>
+                <a href="https://github.com/JollyOscar" target="_blank" class="contact-link text-green-300">github.com/JollyOscar</a>
+            </div>
+
+            <!-- Technical Skills -->
+            <h2 style="margin-top: 0;">Technical Skills</h2>
+            <div class="text-sm mb-3">
+                <p class="font-bold text-xs text-gray-300 mt-2">SYSTEMS ADMINISTRATION</p>
+                <p class="mb-2"><strong>Active Directory (AD DS)</strong>, <strong>Windows Server 2025</strong>, Ubuntu Server, <strong>Group Policy (GPO)</strong></p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">INFRASTRUCTURE & NETWORKING</p>
+                <p class="mb-2">DNS (BIND9), DHCP (Kea), Firewalls, <strong>nftables</strong>, NAT, AWS EC2/VPC</p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">AUTOMATION & DEVOPS</p>
+                <p class="mb-2"><strong>Bash scripting</strong>, Docker, Git/GitHub, Nginx, Infrastructure-as-Code (IaC)</p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">METHODOLOGIES & PRACTICES</p>
+                <p class="mb-2">Standardization, repeatability, process automation, documentation-first approach; familiar with Agile concepts</p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">COMPLIANCE & SAFETY</p>
+                <p class="mb-2">WHMIS & OH&amp;S, Standard First Aid &amp; CPR</p>
+            </div>
+
+            <!-- Education -->
+            <h2>Education</h2>
+            <div class="mb-3">
+                <p class="font-bold text-sm">Diploma, IT Systems Management &amp; Security</p>
+                <p class="text-xs italic mb-2">NSCC Truro Campus<br>Sept 2024 – Present</p>
+                <p class="text-xs font-semibold mb-1">Relevant Coursework:</p>
+                <p class="text-xs">Windows Administration, Linux OS, Networking &amp; Security</p>
+            </div>
+
+            <!-- Notes / Eligibility -->
+            <h2>Eligibility</h2>
+            <div class="text-xs leading-relaxed">
+                <p class="mb-2">Able to participate in Canadian Government security screening processes as required; safety-first mindset and compliance-focused work habits.</p>
+                <p class="text-gray-300">Keywords: <strong>securing infrastructure</strong>, <strong>stability of critical business solutions</strong>, <strong>monitoring and analyzing capacity</strong>, <strong>standardization</strong></p>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+
+            <!-- Career Profile -->
+            <div class="mb-3">
+                <h2 style="margin-top: 0;">Career Profile</h2>
+                <p class="text-sm leading-relaxed">
+                    IT Systems Management &amp; Security student with a focus on infrastructure design, <strong>process automation</strong>, and <strong>securing infrastructure</strong>.
+                    Proven track record of operational reliability and attention to detail in high-pressure environments.
+                    Committed to driving <strong>standardization</strong> and efficiency through industry leading practices and technical leadership.
+                </p>
+            </div>
+
+            <!-- Core IT Projects -->
+            <div class="mb-2">
+                <h2>Core IT Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="mb-2">
+                    <h3 class="font-bold text-md">Windows Server Infrastructure Design</h3>
+                    <ul class="text-sm mt-1 mb-1">
+                        <li><strong>Architected</strong> a virtualized environment using <strong>Windows Server 2025</strong> to ensure the <strong>stability of critical business solutions</strong>.</li>
+                        <li><strong>Configured</strong> <strong>Active Directory (AD DS)</strong> for centralized authentication and implemented <strong>Group Policy Objects (GPOs)</strong> for security enforcement and <strong>securing infrastructure</strong>.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-bold text-md">Linux Systems &amp; Process Automation</h3>
+                        <a href="https://github.com/JollyOscar/server-config-repo" target="_blank" class="text-xs text-blue-600 hover:underline font-mono">server-config-repo</a>
+                    </div>
+                    <ul class="text-sm mt-1">
+                        <li><strong>Automated</strong> deployments using custom <strong>Bash scripts</strong> to improve efficiency and <strong>repeatability</strong> of operational tasks.</li>
+                        <li><strong>Hardened</strong> network appliances using <strong>Fail2Ban</strong> and <strong>nftables</strong> for intrusion mitigation and <strong>securing infrastructure</strong>.</li>
+                        <li><strong>Configured</strong> enterprise-level services including <strong>BIND9 DNS</strong> and <strong>Kea DHCP</strong> for automated addressing.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-bold text-md">Cloud Infrastructure &amp; Containerization</h3>
+                        <a href="https://github.com/JollyOscar/docker-install-guide" target="_blank" class="text-xs text-blue-600 hover:underline font-mono">docker-install-guide</a>
+                    </div>
+                    <ul class="text-sm mt-1">
+                        <li><strong>Deployed</strong> AWS EC2 instances using security groups for granular traffic control.</li>
+                        <li><strong>Orchestrated</strong> containerized services with <strong>Docker</strong> and <strong>Nginx</strong> to validate complex routing configurations.</li>
+                        <li><strong>Developed</strong> Infrastructure-as-Code (IaC) solutions using Bash scripts with Git version control for <strong>standardization</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Professional Strengths -->
+            <div class="mb-2">
+                <h2>Professional Strengths</h2>
+                <ul class="text-sm mt-1">
+                    <li><strong>Operational Reliability:</strong> Maintained a 99% attendance record over 6 years in high-stakes logistics, demonstrating the consistency required for on-site enterprise support.</li>
+                    <li><strong>Attention to Detail:</strong> Proven ability to manage complex logistics and planning during high-volume periods, ensuring accuracy and prioritization.</li>
+                    <li><strong>Safety &amp; Compliance:</strong> Maintained a zero-accident safety record (OH&amp;S), aligning with rigorous safety expectations and compliance-driven environments.</li>
+                    <li><strong>Operational Focus:</strong> Strong bias toward <strong>process automation</strong> and documentation to improve repeatability and reduce operational risk.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

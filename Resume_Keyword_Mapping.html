@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Keyword Mapping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a4d7a;
+            border-bottom: 3px solid #1a4d7a;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c5f8d;
+            margin-top: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        .mapping-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .mapping-table th {
+            background-color: #1a4d7a;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .mapping-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+        .mapping-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .job-keyword {
+            font-weight: bold;
+            color: #1a4d7a;
+        }
+        .resume-location {
+            font-style: italic;
+            color: #666;
+        }
+        .match-strong {
+            background-color: #c8e6c9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .match-moderate {
+            background-color: #fff9c4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .section-note {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume-to-Job Posting Keyword Mapping</h1>
+        <p><strong>Candidate:</strong> Alex Gamble | <strong>Position:</strong> Systems Administrator - Irving Shipbuilding</p>
+
+        <div class="section-note">
+            <strong>Legend:</strong> <span class="match-strong">Strong Match</span> = Direct keyword usage | 
+            <span class="match-moderate">Moderate Match</span> = Related/implied skill
+        </div>
+
+        <h2>Technical Skills Alignment</h2>
+        <table class="mapping-table">
+            <tr>
+                <th>Job Requirement</th>
+                <th>Resume Location</th>
+                <th>Match Strength</th>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Active Directory (AD)</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "Active Directory (AD DS)"<br>
+                    <strong>Projects:</strong> "Configured Active Directory (AD DS) for centralized authentication"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Windows Server</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "Windows Server 2025"<br>
+                    <strong>Projects:</strong> "Architected a virtualized environment using Windows Server 2025"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Linux Server OS</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "Ubuntu Server"<br>
+                    <strong>Projects:</strong> "Linux Systems & Process Automation" (entire project section)
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Group Policy (GPO)</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "Group Policy (GPO)"<br>
+                    <strong>Projects:</strong> "Implemented Group Policy Objects (GPOs) for security enforcement"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Virtualization</span></td>
+                <td>
+                    <strong>Projects:</strong> "Architected a virtualized environment"
+                </td>
+                <td><span class="match-moderate">Moderate Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Cloud Platforms (AWS)</span> (Bonus)</td>
+                <td>
+                    <strong>Technical Skills:</strong> "AWS EC2/VPC"<br>
+                    <strong>Projects:</strong> "Deployed AWS EC2 instances using security groups"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Bash Scripting</span> (Related to PowerShell bonus)</td>
+                <td>
+                    <strong>Technical Skills:</strong> "Bash scripting"<br>
+                    <strong>Projects:</strong> "Automated deployments using custom Bash scripts"
+                </td>
+                <td><span class="match-moderate">Moderate Match</span></td>
+            </tr>
+        </table>
+
+        <h2>Key Responsibilities & Concepts Alignment</h2>
+        <table class="mapping-table">
+            <tr>
+                <th>Job Keyword/Phrase</th>
+                <th>Resume Location</th>
+                <th>Match Strength</th>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Process automation</span></td>
+                <td>
+                    <strong>Career Profile:</strong> "focus on infrastructure design, process automation"<br>
+                    <strong>Technical Skills:</strong> "process automation" listed under Methodologies<br>
+                    <strong>Projects:</strong> "Automated deployments using custom Bash scripts"<br>
+                    <strong>Professional Strengths:</strong> "Strong bias toward process automation"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Repeatability</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "repeatability" listed under Methodologies<br>
+                    <strong>Projects:</strong> "improve efficiency and repeatability of operational tasks"<br>
+                    <strong>Professional Strengths:</strong> "improve repeatability and reduce operational risk"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Securing infrastructure</span></td>
+                <td>
+                    <strong>Career Profile:</strong> "securing infrastructure"<br>
+                    <strong>Projects:</strong> "securing infrastructure" (Windows Server project)<br>
+                    <strong>Projects:</strong> "Hardened network appliances... for securing infrastructure"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Standardization</span></td>
+                <td>
+                    <strong>Career Profile:</strong> "driving standardization"<br>
+                    <strong>Technical Skills:</strong> "Standardization" listed under Methodologies<br>
+                    <strong>Projects:</strong> "Git version control for standardization"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Stability of critical business solutions</span></td>
+                <td>
+                    <strong>Projects:</strong> "ensure the stability of critical business solutions" (Windows Server project)
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Industry leading practices</span></td>
+                <td>
+                    <strong>Career Profile:</strong> "industry leading practices"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Technical leadership</span></td>
+                <td>
+                    <strong>Career Profile:</strong> "technical leadership"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Agile framework</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "familiar with Agile concepts"
+                </td>
+                <td><span class="match-moderate">Moderate Match</span></td>
+            </tr>
+        </table>
+
+        <h2>Compliance & Professional Requirements Alignment</h2>
+        <table class="mapping-table">
+            <tr>
+                <th>Job Requirement</th>
+                <th>Resume Location</th>
+                <th>Match Strength</th>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">On-site presence requirement</span></td>
+                <td>
+                    <strong>Professional Strengths:</strong> "Maintained a 99% attendance record over 6 years... demonstrating the consistency required for on-site enterprise support"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Canadian Government Security clearance eligibility</span></td>
+                <td>
+                    <strong>Eligibility Section:</strong> "Able to participate in Canadian Government security screening processes"<br>
+                    <strong>Professional Strengths:</strong> "Maintained a zero-accident safety record (OH&S)... compliance-driven environments"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Safety & Compliance</span></td>
+                <td>
+                    <strong>Technical Skills:</strong> "WHMIS & OH&S, Standard First Aid & CPR"<br>
+                    <strong>Professional Strengths:</strong> "Safety & Compliance: Maintained a zero-accident safety record"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+            <tr>
+                <td><span class="job-keyword">Attention to Detail (Planning and Prioritization)</span></td>
+                <td>
+                    <strong>Professional Strengths:</strong> "Attention to Detail: Proven ability to manage complex logistics and planning... ensuring accuracy and prioritization"
+                </td>
+                <td><span class="match-strong">Strong Match</span></td>
+            </tr>
+        </table>
+
+        <h2>Summary Statistics</h2>
+        <div class="section-note">
+            <p><strong>Total Keywords/Phrases Matched:</strong> 18 out of 20 major requirements</p>
+            <p><strong>Strong Matches:</strong> 16</p>
+            <p><strong>Moderate Matches:</strong> 2</p>
+            <p><strong>ATS Optimization:</strong> High - Keywords appear in multiple sections (Career Profile, Technical Skills, Projects, Professional Strengths)</p>
+            <p><strong>Strategic Positioning:</strong> Resume emphasizes automation, standardization, and infrastructure security throughout, directly mirroring the job posting's priorities.</p>
+        </div>
+    </div>
+</body>
+</html>

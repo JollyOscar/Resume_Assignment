@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Gamble Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #525659; /* Viewer background */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* The Resume Page (A4 Dimensions) */
+        .page {
+            width: 210mm;
+            min-height: 296mm; /* Slightly less than 297mm to prevent spillover */
+            background: white;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        /* Print Settings */
+        @media print {
+            @page {
+                margin: 0;
+                size: auto;
+            }
+            html, body {
+                height: 100%;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: hidden;
+            }
+            .page {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                min-height: 100%;
+                margin: 0;
+                border: none;
+            }
+            .no-print {
+                display: none !important;
+            }
+            /* Forces background colors to print */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+
+        /* Left Column Specifics */
+        .left-col {
+            background-color: #333333;
+            color: white;
+            width: 33%; /* Approx 1/3 */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Right Column Specifics */
+        .right-col {
+            background-color: white;
+            color: #1a1a1a;
+            width: 67%; /* Approx 2/3 */
+            padding: 25px;
+        }
+
+        h2 {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            letter-spacing: 0.05em;
+        }
+
+        .left-col h2 {
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 6px;
+            margin-top: 18px;
+            color: #f0f0f0;
+        }
+        
+        .right-col h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 6px;
+            margin-top: 18px;
+            color: #333;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .contact-link {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .company {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        
+        li {
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Control Bar for User -->
+    <div class="fixed top-0 left-0 w-full bg-white p-4 shadow-md no-print flex justify-center items-center gap-4 z-50">
+        <span class="font-bold text-gray-700">Resume Preview</span>
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow">
+            Download PDF / Print
+        </button>
+    </div>
+
+    <!-- Resume Page -->
+    <div class="page mt-16">
+        
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+            <!-- Name Block -->
+            <div class="mb-5">
+                <h1 class="text-3xl font-bold uppercase tracking-wide leading-tight mb-2">Alex<br>Gamble</h1>
+                <p class="text-gray-300 text-sm">Truro, NS</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="mb-2">
+                <a href="tel:9029568112" class="contact-link">902-956-8112</a>
+                <a href="mailto:thealexgamble@gmail.com" class="contact-link">thealexgamble@gmail.com</a>
+                <a href="https://www.linkedin.com/in/alex-gamble-987805351" target="_blank" class="contact-link text-blue-300">LinkedIn Profile</a>
+                <a href="https://github.com/JollyOscar" target="_blank" class="contact-link text-green-300">github.com/JollyOscar</a>
+            </div>
+
+            <!-- Education -->
+            <h2 style="margin-top: 0;">Education</h2>
+            <div class="mb-4">
+                <p class="font-bold text-sm">Diploma, IT Systems Management & Security</p>
+                <p class="text-xs italic mb-2">NSCC Truro Campus<br>Sept 2024 – Present</p>
+                <p class="text-xs font-semibold mb-1">Relevant Courses:</p>
+                <p class="text-xs">Windows Administration, Linux OS, Networking & Security</p>
+            </div>
+
+            <!-- Skills -->
+            <h2>Technical Skills</h2>
+            <div class="text-sm mb-4">
+                <p class="font-bold text-xs text-gray-300 mt-2">SYSTEMS ADMINISTRATION</p>
+                <p class="mb-2">Ubuntu Server, Windows Server 2025, Active Directory (AD DS), Group Policy (GPO)</p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">NETWORK SECURITY</p>
+                <p class="mb-2">DNS (BIND9), DHCP (Kea), nftables, NAT, Fail2Ban, Firewalls</p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">CLOUD INFRASTRUCTURE</p>
+                <p class="mb-2">AWS EC2, VPC, Security Groups, Cloud Computing Concepts</p>
+
+                <p class="font-bold text-xs text-gray-300 mt-2">DEVOPS & TOOLS</p>
+                <p class="mb-2">Docker, Git/GitHub, Bash Scripting, Nginx, VS Code</p>
+            </div>
+
+            <!-- Certifications -->
+            <h2>Certifications</h2>
+            <ul class="text-xs pl-4">
+                <li>WHMIS & OH&S</li>
+                <li>Standard First Aid & CPR</li>
+                <li>AWS Cloud & Linux Server Configuration (Self-Directed)</li>
+            </ul>
+
+            <!-- References -->
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+            
+            <!-- Career Profile -->
+            <div class="mb-3">
+                <h2 style="margin-top: 0;">Career Profile</h2>
+                <p class="text-sm leading-relaxed">
+                    <strong>IT Systems Management & Security</strong> student specializing in cloud infrastructure, system hardening, and network engineering. Hands-on experience with Linux automation, AWS services, and Windows Server 2025. Leveraging operational reliability and logistics background to deliver robust IT solutions.
+                </p>
+            </div>
+
+            <!-- Project Highlights -->
+            <div class="mb-3">
+                <h2>Project Highlights</h2>
+
+                <!-- Project 1 -->
+                <div class="mb-3">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-bold text-md">Linux Systems & Network Hardening</h3>
+                        <a href="https://github.com/JollyOscar/server-config-repo" target="_blank" class="text-xs text-blue-600 hover:underline font-mono">server-config-repo</a>
+                    </div>
+                    <ul class="text-sm mt-1 mb-1">
+                        <li><strong>Hardened</strong> an Ubuntu Server network appliance using <strong>nftables</strong>, NAT, and <strong>Fail2Ban</strong> for intrusion mitigation.</li>
+                        <li><strong>Configured</strong> enterprise-level services including <strong>BIND9 DNS</strong> and <strong>Kea DHCP</strong> for automated addressing.</li>
+                        <li><strong>Automated</strong> deployments using custom <strong>Bash scripts</strong> for reproducible configurations.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-3">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-bold text-md">Cloud Infrastructure & Automation</h3>
+                        <a href="https://github.com/JollyOscar/docker-install-guide" target="_blank" class="text-xs text-blue-600 hover:underline font-mono">docker-install-guide</a>
+                    </div>
+                    <ul class="text-sm mt-1 mb-1">
+                        <li><strong>Deployed</strong> AWS EC2 instances (Ubuntu 24.04), utilizing security groups for granular traffic control.</li>
+                        <li><strong>Developed</strong> Infrastructure-as-Code (IaC) solutions using Bash scripts with Git version control.</li>
+                        <li><strong>Orchestrated</strong> containerized web services using <strong>Docker</strong> and <strong>Nginx</strong> to validate routing configurations.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-3">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-bold text-md">Windows Server Administration</h3>
+                    </div>
+                    <ul class="text-sm mt-1">
+                        <li><strong>Architected</strong> a virtualized small office environment using <strong>Windows Server 2025</strong>.</li>
+                        <li><strong>Configured</strong> Active Directory (AD DS) for centralized user authentication.</li>
+                        <li><strong>Implemented</strong> Group Policy Objects (GPOs) for security enforcement and drive mapping.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div>
+                <h2>Employment Experience</h2>
+                
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline">
+                        <span class="job-title">Warehouse Logistics Associate</span>
+                        <span class="text-sm font-bold text-gray-600">2019 – 2025</span>
+                    </div>
+                    <div class="company text-sm">Sobeys Warehouse — Truro, NS</div>
+                    <ul class="text-sm mt-1">
+                        <li><strong>Maintained</strong> 99% attendance and zero-accident safety record (OH&S) over 6 years.</li>
+                        <li><strong>Collaborated</strong> with team to manage complex inventory logistics and ensure accurate order fulfillment.</li>
+                        <li><strong>Maintained</strong> high shipment accuracy during critical high-volume seasonal peaks.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
